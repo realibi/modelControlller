@@ -1,0 +1,14 @@
+{
+    "require": {
+        "catfan/medoo": "^1.7",
+        "klein/klein": "^2.1",
+        "smarty/smarty": "^3.1@dev"
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "": "./app"
+        }
+    }
+}

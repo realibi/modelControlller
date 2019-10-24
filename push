@@ -1,0 +1,15 @@
+<?php
+
+exec("git add .");
+
+$str = "git commit -m \"";
+
+if(isset($argv[1]))
+    $str .= $argv[1];
+else
+    $str .= "base commit";
+
+$str .= "\"";
+exec($str);
+
+exec("git push --set-upstream origin master");
